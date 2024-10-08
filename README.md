@@ -1,15 +1,35 @@
-# Whatsapp-Chatbot
-Automatic Chatbot For Whatsapp
+# Automatic Chatbot for WhatsApp
+This project is a fully automatic WhatsApp Chatbot that detects new messages, opens them, and replies without any manual interaction. The bot is designed to streamline the process of responding to messages, making communication hands-free.
+
+## Features
+- Automatic Detection: The bot detects new messages based on specific indicators on the WhatsApp interface (e.g., green dot).
+- Message Replying: Automatically opens the new message and sends a reply based on pre-defined responses.
+- Customizable Responses: You can modify or add responses by adjusting the code in whatsapprespo.py.
+
+## Folder Structure
+- Demo Folder: Contains a demo video showing how the bot works. This will give you a visual understanding of the bot's functionality.
+- Images Folder: Contains images used to detect new messages and interact with the WhatsApp interface.
+green_dot.jpeg is used to identify a new message notification.
+clip.jpeg is used to find the location of the text box where the message is typed and sent.
+- Note: If you're not using dark mode or using an iOS device, you may need to replace these images with updated screenshots from your version of WhatsApp.
+
+## Main Files
+- chatbot.py:
+This file contains the main code for the WhatsApp Chatbot.
+If you want to run this bot on your system, you will need to adjust some coordinates, as they may differ depending on your screen size and resolution.
+All the coordinates that need to be adjusted are clearly mentioned in the comments within the script.
+- whatsapprespo.py:
+This file contains the logic for generating responses to messages.
+You can easily modify or add new responses to match your needs.
+
+## Setup Instructions
+Ensure you have all the required dependencies installed.
+Update the green_dot.jpeg and clip.jpeg images if needed (especially if you're not using dark mode).
+Open the chatbot.py file and update the coordinates based on your screen resolution.
+Run the chatbot.py script, and the bot will start detecting and responding to messages automatically.
 
 
-Created This Chatbot that is fully automatic it detects new messages and open the new message and reply to it without touching a single  key.
+## Notes
+Screen Resolution: The bot uses image recognition and coordinate-based actions, so the coordinates in the script may vary based on your screen resolution.
 
-Demo Folder : Contains Demo Video Of How actually Bot works, It will give you a better idea of the working of this bot.
-
-Images Folder : Contians images that are used wile creating this bot green_dot.jpeg is used to identify new message and clip.jpeg is used to message and text box as it is the closet to both.
-You will need to change this images if you are not using dark mode also if you are using IOS.
-
-chatbot.py : This files contains main code of the the chatbot is created to use the same chatbot in your system you will need to change some cordinates as it may be diff for diff screen size.
-All the co-ordinates that need to be change are Mentioned In Comments.
-
-whatsapprespo.py : This File contains a function that gives response to given input message. You can modify/add new responses according to your needs.
+Custom Responses: Feel free to modify whatsapprespo.py to customize the responses sent by the bot.
